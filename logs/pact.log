@@ -1,0 +1,93 @@
+I, [2021-12-17T18:53:19.767640 #17392]  INFO -- : Registered expected interaction GET /todos/1
+D, [2021-12-17T18:53:19.767640 #17392] DEBUG -- : {
+  "description": "a request to get a todo",
+  "providerState": "a todo with ID 1 exists",
+  "request": {
+    "method": "GET",
+    "path": "/todos/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "id": 1,
+      "name": "Do something",
+      "completed": false
+    }
+  },
+  "metadata": null
+}
+I, [2021-12-17T18:53:19.804806 #17392]  INFO -- : Received request GET /todos/1
+D, [2021-12-17T18:53:19.804806 #17392] DEBUG -- : {
+  "path": "/todos/1",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0",
+    "Accept-Language": "en",
+    "Accept": "*/*",
+    "Origin": "http://localhost",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:3002",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-12-17T18:53:19.804806 #17392]  INFO -- : Found matching response for GET /todos/1
+D, [2021-12-17T18:53:19.804806 #17392] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "id": 1,
+    "name": "Do something",
+    "completed": false
+  }
+}
+I, [2021-12-17T18:53:19.853556 #17392]  INFO -- : Registered expected interaction GET /todos/999
+D, [2021-12-17T18:53:19.854555 #17392] DEBUG -- : {
+  "description": "a request to get a todo",
+  "providerState": "a todo with ID 999 not exists",
+  "request": {
+    "method": "GET",
+    "path": "/todos/999"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "body": "<head>\n<link href=\"https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap\" rel=\"stylesheet\">\n<script src=\"https://kit.fontawesome.com/4b9ba14b0f.js\" crossorigin=\"anonymous\"></script>\n<style>\n    body {\n        background-color: #95c2de;\n    }\n\n    .mainbox {\n        background-color: #95c2de;\n        margin: auto;\n        height: 600px;\n        width: 600px;\n        position: relative;\n    }\n\n    .err {\n        color: #ffffff;\n        font-family: 'Nunito Sans', sans-serif;\n        font-size: 11rem;\n        position: absolute;\n        left: 20%;\n        top: 8%;\n    }\n\n    .far {\n        position: absolute;\n        font-size: 8.5rem;\n        left: 42%;\n        top: 15%;\n        color: #ffffff;\n    }\n\n    .err2 {\n        color: #ffffff;\n        font-family: 'Nunito Sans', sans-serif;\n        font-size: 11rem;\n        position: absolute;\n        left: 68%;\n        top: 8%;\n    }\n\n    .msg {\n        text-align: center;\n        font-family: 'Nunito Sans', sans-serif;\n        font-size: 1.6rem;\n        position: absolute;\n        left: 16%;\n        top: 45%;\n        width: 75%;\n    }\n\n    a {\n        text-decoration: none;\n        color: white;\n    }\n\n    a:hover {\n        text-decoration: underline;\n    }\n</style>\n</head>\n\n<body>\n<script>\n    var path = document.location.pathname;\n    var path = window.location.href;\n    var directory = path.substring(path.indexOf('//'), path.lastIndexOf('/'));\n    console.log(path);\n    console.log(directory);\n</script>\n<div class=\"mainbox\">\n    <div class=\"err\">4</div>\n    <i class=\"far fa-question-circle fa-spin\"></i>\n    <div class=\"err2\">4</div>\n    <div class=\"msg\">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first\n        place?<p>Let's go <a href=\"#\">home</a> and try from there.</p>\n    </div>\n</div>"
+  },
+  "metadata": null
+}
+I, [2021-12-17T18:53:19.869407 #17392]  INFO -- : Received request GET /todos/999
+D, [2021-12-17T18:53:19.869407 #17392] DEBUG -- : {
+  "path": "/todos/999",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Referer": "http://localhost/",
+    "User-Agent": "Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/16.7.0",
+    "Accept-Language": "en",
+    "Accept": "*/*",
+    "Origin": "http://localhost",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "localhost:3002",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-12-17T18:53:19.869407 #17392]  INFO -- : Found matching response for GET /todos/999
+D, [2021-12-17T18:53:19.870400 #17392] DEBUG -- : {
+  "status": 404,
+  "headers": {
+    "Content-Type": "text/html; charset=UTF-8"
+  },
+  "body": "<head>\n<link href=\"https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap\" rel=\"stylesheet\">\n<script src=\"https://kit.fontawesome.com/4b9ba14b0f.js\" crossorigin=\"anonymous\"></script>\n<style>\n    body {\n        background-color: #95c2de;\n    }\n\n    .mainbox {\n        background-color: #95c2de;\n        margin: auto;\n        height: 600px;\n        width: 600px;\n        position: relative;\n    }\n\n    .err {\n        color: #ffffff;\n        font-family: 'Nunito Sans', sans-serif;\n        font-size: 11rem;\n        position: absolute;\n        left: 20%;\n        top: 8%;\n    }\n\n    .far {\n        position: absolute;\n        font-size: 8.5rem;\n        left: 42%;\n        top: 15%;\n        color: #ffffff;\n    }\n\n    .err2 {\n        color: #ffffff;\n        font-family: 'Nunito Sans', sans-serif;\n        font-size: 11rem;\n        position: absolute;\n        left: 68%;\n        top: 8%;\n    }\n\n    .msg {\n        text-align: center;\n        font-family: 'Nunito Sans', sans-serif;\n        font-size: 1.6rem;\n        position: absolute;\n        left: 16%;\n        top: 45%;\n        width: 75%;\n    }\n\n    a {\n        text-decoration: none;\n        color: white;\n    }\n\n    a:hover {\n        text-decoration: underline;\n    }\n</style>\n</head>\n\n<body>\n<script>\n    var path = document.location.pathname;\n    var path = window.location.href;\n    var directory = path.substring(path.indexOf('//'), path.lastIndexOf('/'));\n    console.log(path);\n    console.log(directory);\n</script>\n<div class=\"mainbox\">\n    <div class=\"err\">4</div>\n    <i class=\"far fa-question-circle fa-spin\"></i>\n    <div class=\"err2\">4</div>\n    <div class=\"msg\">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in the first\n        place?<p>Let's go <a href=\"#\">home</a> and try from there.</p>\n    </div>\n</div>"
+}
+I, [2021-12-17T18:53:19.906281 #17392]  INFO -- : Writing pact for ATDD-EXPRESS to C:/Users/Administrator/Desktop/reactTdd/testest/pacts/atdd-react-atdd-express.json
